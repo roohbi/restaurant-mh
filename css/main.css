@@ -1,0 +1,679 @@
+:root {
+    --dark-color:#1e272e;
+    --brand-color : #DB9423;
+    --border-color : #ED7A00;
+    --transation : all 0.3s ease-in-out;
+}
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+::-webkit-scrollbar{
+    width: 12px;
+}
+
+
+::-webkit-scrollbar-track{
+    border-radius: 100px;
+    background-color: #efefef;
+}
+
+
+::-webkit-scrollbar-thumb{
+    background-color: #fa84067a;
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color: var(--border-color);
+}
+
+.top-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 6vh;
+}
+
+.top-bar .left{
+    font-size: 20px;
+}
+.top-bar a:hover{
+    color: var(--dark-color);
+}
+
+a{
+    color :#fff;
+    text-decoration: none;
+    transition: var(--transation);
+}
+
+a:hover{
+    color: var(--brand-color);
+}
+::selection {
+    background-color: var(--brand-color);
+    color: #fff;
+}
+
+nav .image{
+    width: 7%;
+    height: 5%;
+    background-color: #eee;
+    background-color: #fff;
+    border-radius: 50%;
+
+}
+
+nav .image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.title{
+    font-weight: 600;
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 60px;
+}
+.title span{
+    color: var(--brand-color);
+    font-weight: 900;
+}
+.navbar .btn:focus,
+.banner .btn:focus{
+    box-shadow: none;
+}
+body {
+    font-family: 'Cairo', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+}
+.up{
+    background-color:var(--brand-color);
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    position: fixed;
+    bottom: 30px;
+    left: 20px;
+    color: white;
+    font-weight: bold;
+    z-index: 2;
+    transition: all .3s ease-in-out;
+    display: none;
+}
+.up:hover{
+    transform: translateY(-8px);
+}
+.bar{
+    background-color:var(--brand-color);
+    color: #fff;
+    padding-top:10px ;
+}
+
+.bar .social-media li{
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.bar .social-media li a{
+    color: #fff;
+    transition: var(--transation);
+}
+.bar .social-media li a:hover{
+    color: var(--dark-color);
+}
+.info-bar{
+    font-size: 20px;
+    font-style: italic;
+    color: #fff;
+    transition: var(--transation);
+}
+
+.navbar{
+    background-color: #fff;
+}
+.navbar-nav .nav-link{
+    color: black;
+    margin-left: 20px;
+    font-size: 20px;
+
+}
+
+.navbar .btn-main{
+    background-color: var(--brand-color);
+    border: 1px solid var(--border-color) ;
+}
+.navbar-nav .nav-link:active,
+.navbar-nav .nav-link:focus,
+.navbar-nav .nav-link:hover{
+    color : var(--brand-color);
+}
+.navbar .navbar-toggler{
+    color: var(--dark-color);
+    border: 2px solid var(--dark-color);
+}
+.navbar .navbar-toggler:focus{
+    box-shadow: none;
+}
+.mybanner{
+    background-image: url(../images/back-ffod-r.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: relative;
+}
+
+.mybanner .intro{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    text-align: center;
+    z-index: 10;
+}
+
+.intro h1{
+    font-size: 80px;
+    margin-top: 30px;
+    margin-bottom: 70px;
+    font-weight: bold;
+}
+
+.intro p{
+    margin-bottom: 50px;
+    font-size: 20px;
+    color: #fff;
+}
+
+.order.btn {
+    background-color:var(--brand-color);
+    border: none;
+    transition: var(--transation);
+    margin-right: 10px;
+
+}
+
+.order.btn:hover{
+    background-color: var(--border-color);
+}
+
+.booking.btn {
+    background-color: transparent;
+    border: 1px solid var(--border-color);
+    transition: var(--transation);
+}
+.booking.btn:hover{
+    background-color: var(--brand-color);
+}
+
+/* section about us */
+#about-us{
+    padding: 70px 0 30px 0;
+}
+
+#about-us h3{
+    font-size: 30px;
+    font-weight: bold;
+    font-style: italic;
+    padding-top: 40px;
+    margin-bottom: 40px;
+}
+
+#about-us .image{
+    width: 100%;
+    height: 100%;
+}
+
+#about-us .image img{
+    width: 100%;
+    height: 100%;
+}
+
+#about-us .about{
+    background-color: #fff;
+    border: 1px solid #efefef;
+}
+
+#about-us p{
+    margin-bottom: 30px;
+    line-height: 1.6em;
+}
+/* section about us */
+/* section our menue */
+#our-menue {
+    padding: 60px 0 20px 0;
+    background-color: #000;
+    opacity: 0.9;
+    color: #fff;
+    margin-top: 100px;
+}
+
+#our-menue .item{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin: 10px;
+    margin-bottom: 20px;
+}
+
+#our-menue .item .image{
+    width: 20%;
+    height: 20%;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+#our-menue .item .image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+
+#our-menue .item-info .item-title{
+    font-size: 17px;
+    font-weight: 500;
+}
+
+#our-menue .item-info p{
+    font-size: 12px;
+    color: #ddd;
+    width: 85%;
+}
+/* section our menue */
+/* our-testi */
+.our-testi {
+    background-color: #fff;
+    padding: 60px 0 30px 0;
+}
+
+.our-testi .testi {
+    background-color: #fff;
+    border-radius: 10px;
+    border: 1px solid #eee;
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #efeffe;
+}
+
+.testi .image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #eee;
+    margin-bottom: 5px;
+    margin: 10px;
+    margin: auto;
+    border: 3px solid var(--brand-color);
+    margin-bottom: 10px;
+}
+
+.testi .image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.testi .writer {
+    color: var(--dark-color);
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.testi .descr {
+    line-height: 1.4em;
+}
+
+.testi .desc .stars{
+    font-size: 30px;
+    color: var(--brand-color);
+}
+
+.testi .desc img {
+    height: 100px;
+}
+/* section our testi */
+/* section our gallery */
+.gallery{
+    background-color: #000;
+    opacity: 0.9;
+    padding: 60px 0 80px 0;
+    color: #fff;
+}
+
+.gallery .row {
+    width: 98%;
+    margin: auto;
+    background-color: #fff;
+}
+.gallery .row .col-sm-6{
+    margin: 0;
+    padding: 0;
+}
+.gallery .row .col{
+    border: 3px solid #fff;
+}
+.gallery .image{
+    position: relative;
+    width: 100%;
+    height: 110%;
+    background-color: #efefef;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.gallery .image img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.image .overlay{
+    position: absolute;
+    background: radial-gradient(circle at 10% 20%, rgb(255, 131, 61) 0%, rgb(249, 183, 23) 90%);
+    opacity: 0;
+    transition: all .4s ease;
+}
+
+.image .overlay .content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    color: #fff;
+}
+
+.image .overlay.overlay-left{
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.gallery .image:hover .overlay.overlay-left{
+    opacity: 1;
+}
+
+
+
+
+/* section our gallery */
+/* section contact us */
+#contact{
+    padding: 60px 0;
+}
+
+#contact .contact-res{
+    background-color: #fff;
+    border: 1px solid #efefef;
+    padding: 30px;
+    box-shadow: 0 3px 10px #efefef;
+    margin-bottom: 15px;
+}
+
+#contact .contact-res span a{
+    color: #000;
+    transition: var(--transation);
+}
+
+#contact .contact-res span a:hover{
+    color: var(--brand-color);
+}
+
+.contact-res h5{
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.contact-res div{
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.contact-res .days{
+    width: 130px;
+    border-left: 3px solid var(--brand-color);
+    padding-left: 5px;
+    font-style: normal;
+    text-transform: uppercase;
+}
+.contact-res .ican-contact{
+    width: 30px;
+}
+
+.contact-res-form input{
+    height: 40px;
+    width: 100%;
+    border: 1px solid var(--brand-color);
+    margin-bottom: 15px;
+    padding: 15px;
+    transition: all 0.1s ease;
+}
+
+.contact-res-form textarea{
+    height: 100px;
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 15px;
+    transition: all 0.1s ease;
+    border: 1px solid var(--brand-color);
+}
+
+.contact-res-form input:focus{
+    outline: none;
+}
+.contact-res-form textarea:focus{
+    outline: none;
+}
+
+.contact-res-form button{
+    width: 200px;
+    background-color: var(--brand-color);
+    border: 1px solid var(--border-color);
+    transition: var(--transation);
+}
+
+.contact-res-form button:hover{
+    background-color: var(--border-color);
+    border: 1px solid var(--brand-color);
+}
+
+.contact-res-form button:focus {
+    box-shadow: none;
+}
+
+.contact-res .ican-contact{
+    font-size: 20px;
+}
+/* section contact us */
+/* start footer */
+.footer {
+    background-color: #000;
+    opacity: 0.9;
+    color: #fff;
+}
+
+
+.open-hours div{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-bottom: 10px;
+    color: #fff;
+}
+.open-hours div .day{
+    width: 150px;
+}
+
+.footer .customer , .subscribe , .time{
+    color: var(--brand-color);
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.footer .footer-info div{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+
+.footer-info .ican-contact{
+    width: 60px;
+}
+
+.footer-info .follow-me span{
+    margin-right: 15px;   
+}
+
+.footer form input{
+    border: 1px solid var(--brand-color);
+    height: 40px;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.footer form input:focus{
+    outline: none;
+}
+
+.footer form button{
+    background-color: var(--brand-color);
+    width: 150px;
+    border: 1px solid var(--dark-color);
+    transition: var(--transation);
+}
+
+.footer form button:hover{
+    background-color: var(--border-color);
+    border: 1px solid var(--dark-color);
+    box-shadow: none;
+}
+.footer svg{
+    font-size: 20PX;
+    transition: all .2s ease-in-out;
+}
+.footer svg:hover{
+transform: translateY(-10%)
+}
+
+.glf-button.reservation{
+    background-color: #334f66;
+    width: 230px;
+}
+/* end footer */
+
+
+/* start mobail */
+@media(max-width : 767px) {
+    .mybanner{
+        background-position: center;
+    }
+    .mybanner .intro{
+        top: 50%;
+    }
+
+    .navbar .navbar-nav {
+        position: relative;
+        z-index: 1;
+        height: fit-content;
+    }
+    
+    .navbar-nav .nav-link{
+        margin: 0;
+        margin-top: 10px;
+        border-top: 2px solid var(--border-color);
+    }
+
+    .navbar-nav .nav-link.last-child{
+        border-bottom: 2px solid var(--border-color);
+        padding-bottom: 12px;
+    }
+
+    nav .image{
+        width: 15%;
+    }
+
+    .mybanner .intro{
+        width: 90%;
+        margin: auto;
+    }
+
+    .intro h1 {
+        font-size: 60px;
+        margin-bottom: 40px;
+        font-weight: bold;
+    }
+
+    .intro p {
+        margin-bottom: 50px;
+        font-size: 16px;
+        font-style: italic;
+    }
+
+    .intro .order.btn{
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+
+    #about-us h3 {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    #about-us p {
+        margin-bottom: 20px;
+        line-height: 1.5em;
+        text-align: justify;
+    }
+
+    #our-menue .item-info p {
+        font-size: 12px;
+        width: 92%;
+    }
+
+    #our-menue .item-info .item-title {
+        font-size: 13px;
+        font-weight: bold;
+    }
+
+    #our-menue .item .image {
+        width: 36%;
+        height: 36%;
+    }
+
+    .our-testi .testi {
+        margin: 0 5px 20px 5px;
+    }
+
+    .title {
+        margin-bottom: 40px;
+        font-size: 40px;
+    }
+    .footer .customer , .subscribe , .time{
+        margin-top: 15px;
+    }
+    .contact-res .days{
+        font-size: 16px;
+    }
+}
+
+/* end mobail */
